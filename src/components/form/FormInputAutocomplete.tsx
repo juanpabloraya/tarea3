@@ -180,7 +180,6 @@ export const FormInputAutocomplete = <K, T extends FieldValues>({
                         imprimir(`registrado: `, registrado)
 
                         if (!registrado && ![''].includes(newOption.value)) {
-                          // Se agregara sí es que no fue agregado antes
                           field.onChange([...field.value, newOption])
                         }
                         setValue('')

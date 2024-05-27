@@ -86,7 +86,6 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la 
 Asegúrate de que tu archivo `next.config.js` permite la carga de imágenes desde "picsum.photos":
 
 ```javascript
-// next.config.js
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

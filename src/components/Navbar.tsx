@@ -11,68 +11,38 @@ import {
   IconButton,
 } from '@mui/material'
 import Link from 'next/link'
-// import GridExample from '../components/samples/GridExample'
 import SearchIcon from '@mui/icons-material/Search';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import ZoomInOutlinedIcon from '@mui/icons-material/ZoomInOutlined';
 
 function Navbar() {
-  return (
-    <AppBar position="static">
+    return (
+      <AppBar position="static" color="inherit" sx={{border:0}}>
         <Toolbar>
-          <img src="/recursos/Group 19.png" alt="Logotipo de Magia Dental" />
-
+          <Box paddingLeft={15}>
+          <img src="/recursos/Group 19.png" alt="Logo"/>
+          </Box>
+  
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
-              color="primary"
-              sx={{ color: 'black' }}
-              component={Link}
-              href="/nosotros"
-            >
-              Nosotros
-            </Button>
-            <Button
-              color="inherit"
-              sx={{ color: 'black' }}
-              component={Link}
-              href="/servicios"
-            >
-              Servicios
-            </Button>
-            <Button
-              color="inherit"
-              sx={{ color: 'black' }}
-              component={Link}
-              href="/pacientes"
-            >
-              Nuevos pacientes
-            </Button>
-            <Button
-              color="inherit"
-              sx={{ color: 'black' }}
-              component={Link}
-              href="/contacto"
-            >
-              Contacto
-            </Button>
+            <Button color="inherit" sx={{ color: 'black' }}>Nosotros</Button>
+            <Button color="inherit" sx={{ color: 'black' }}>Servicios</Button>
+            <Button color="inherit" sx={{ color: 'black' }}>Nuevos pacientes</Button>
+            <Button color="inherit" sx={{ color: 'black' }}>Contacto</Button>
           </Box>
+          
+          {/* COLOR VERDE */}
           <Box sx={{ flexGrow: 1 }} />
-          <IconButton size="large" aria-label="search" color="primary">
-            <SearchIcon fontSize="large" />
-          </IconButton>
-          <IconButton size="large" aria-label="search" color="primary">
-            <DarkModeOutlinedIcon fontSize="large" />
-          </IconButton>
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ borderRadius: '10px', fontWeight: 'bold' }}
-          >
+          <ZoomInOutlinedIcon sx={{ color: 'green', marginRight: 5 }} />
+          <DarkModeOutlinedIcon sx={{ color: 'green', marginRight: 5 }} />
+          
+          <Button variant="contained" color="primary" style={{borderRadius: '50px'}}>
             Reservar
           </Button>
+          <Box sx={{ flexGrow: 0.5 }} />
         </Toolbar>
       </AppBar>
-  )
+    );
 }
 
 export default Navbar

@@ -51,8 +51,10 @@
   .card p {
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
   }
   
+
   .card .btn {
     display: inline-block;
     padding: 10px 20px;

@@ -90,7 +90,6 @@ export const FormInputDate = <T extends FieldValues>({
                     size={size}
                     {...params}
                     error={!!error}
-                    // Limpiar campo
                     InputProps={{
                       endAdornment:
                         field.value && clearable ? (
@@ -107,7 +106,6 @@ export const FormInputDate = <T extends FieldValues>({
                           <>{params.InputProps?.endAdornment}</>
                         ),
                     }}
-                    // Fin limpiar campo
                   />
                   {!!error && (
                     <FormHelperText error>{error?.message}</FormHelperText>

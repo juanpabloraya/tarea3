@@ -23,8 +23,6 @@ import {
 import { AlertTitle } from '@mui/material'
 import { keyframes } from '@emotion/react'
 import { styled } from '@mui/material/styles'
-
-// Definición de una animación simple
 const bounceAnimation = keyframes`
     0% {
         transform: translateY(0);

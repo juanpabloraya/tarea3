@@ -62,7 +62,6 @@ export const FormInputText = <T extends FieldValues>({
   bgcolor,
   labelVariant = 'subtitle2',
 }: FormInputTextProps<T>) => {
-  // Add these variables to your component to track the state
   const [showPassword, setShowPassword] = useState(false)
   const handleClickShowPassword = () => setShowPassword(!showPassword)
 
